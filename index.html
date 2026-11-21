@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Astraeus Works - Tools for world builders</title>
+  <meta name="description" content="Astraeus Works creates focused tools for designing, sculpting and bringing ambitious worlds into Roblox.">
+  <meta name="theme-color" content="#07110f">
+  <meta property="og:title" content="Astraeus Works - Tools for world builders">
+  <meta property="og:description" content="Focused creative tools for shaping terrain and bringing complete worlds into Roblox.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://astraeusworks.shop/">
+  <link rel="canonical" href="https://astraeusworks.shop/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <a class="brand" href="#top" aria-label="Astraeus Works home">
+      <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+        <path d="M8 36 24 7l16 29h-8.4L24 21.8 16.4 36Z"/>
+        <path class="brand-cut" d="m19 36 5-9 5 9Z"/>
+      </svg>
+      <span>Astraeus <strong>Works</strong></span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle>
+      <span></span><span></span>
+      <span class="sr-only">Open navigation</span>
+    </button>
+
+    <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation" data-nav>
+      <a href="#products">Products</a>
+      <a href="#workflow">Workflow</a>
+      <a href="#principles">Principles</a>
+      <a class="nav-cta" href="https://github.com/erik4412" rel="noreferrer">Follow development</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <canvas class="terrain-canvas" data-terrain aria-hidden="true"></canvas>
+      <div class="hero-glow" aria-hidden="true"></div>
+
+      <div class="hero-content reveal">
+        <p class="eyebrow"><span></span> Independent creative software</p>
+        <h1>Build worlds.<br><em>Keep control.</em></h1>
+        <p class="hero-copy">Astraeus Works creates focused tools for people who design ambitious Roblox environments-from the first terrain stroke to a dependable world in Studio.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#products">Explore the products</a>
+          <a class="button button-quiet" href="#workflow">See the workflow</a>
+        </div>
+      </div>
+
+      <div class="hero-readout" aria-label="Product focus">
+        <span>Terrain</span>
+        <span>World building</span>
+        <span>Roblox</span>
+      </div>
+    </section>
+
+    <section class="intro section-shell reveal" aria-labelledby="intro-title">
+      <p class="section-kicker">One connected toolchain</p>
+      <div class="intro-grid">
+        <h2 id="intro-title">From an empty grid to a world that is ready to build on.</h2>
+        <p>Creative work should stay immediate and editable. Astraeus Works is building a direct terrain editor and a companion Studio workflow that make Roblox constraints visible before export-not after hours of rework.</p>
+      </div>
+    </section>
+
+    <section class="products section-shell" id="products" aria-labelledby="products-title">
+      <div class="section-heading reveal">
+        <div>
+          <p class="section-kicker">Products in development</p>
+          <h2 id="products-title">Two tools. One world.</h2>
+        </div>
+        <p>Use either product independently, or connect them for the complete create-to-Studio workflow.</p>
+      </div>
+
+      <article class="product product-astraeus reveal">
+        <div class="product-index">01</div>
+        <div class="product-copy">
+          <div class="product-meta">
+            <span class="status"><i></i> In development</span>
+            <span>Windows desktop</span>
+          </div>
+          <h3>Astraeus<br><em>Terrain Studio</em></h3>
+          <p>A dedicated 3D heightmap sculptor built around responsive brushes, precision controls and a clear preview of the terrain Roblox will actually receive.</p>
+          <ul class="feature-list" aria-label="Astraeus Terrain Studio highlights">
+            <li>Direct 3D terrain sculpting</li>
+            <li>Editable layers, masks and splines</li>
+            <li>Roblox material painting</li>
+            <li>Multi-format heightmap import</li>
+            <li>Standard and Worldforger export</li>
+          </ul>
+        </div>
+        <div class="product-visual terrain-editor" aria-label="Stylized preview of the Astraeus Terrain Studio interface">
+          <div class="window-bar"><span></span><span></span><span></span><b>Astraeus Terrain Studio</b></div>
+          <div class="editor-layout">
+            <div class="tool-rail"><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="terrain-view">
+              <svg viewBox="0 0 720 440" role="img" aria-label="Layered terrain contour preview">
+                <defs>
+                  <linearGradient id="terrainFill" x1="0" x2="0" y1="0" y2="1">
+                    <stop offset="0" stop-color="#b8ff62" stop-opacity=".54"/>
+                    <stop offset="1" stop-color="#173b2e" stop-opacity=".12"/>
+                  </linearGradient>
+                </defs>
+                <path class="mesh-fill" d="M20 357 120 268 208 311 312 162 407 230 512 101 704 279 704 430 20 430Z"/>
+                <g class="mesh-lines">
+                  <path d="M20 357 120 268 208 311 312 162 407 230 512 101 704 279"/>
+                  <path d="M20 386 122 300 213 342 315 199 410 266 515 139 704 311"/>
+                  <path d="M20 414 126 333 217 373 320 235 415 302 520 178 704 345"/>
+                  <path d="M116 268 126 430M207 311l10 119M312 162l8 268M407 230l8 200M512 101l8 329"/>
+                </g>
+                <circle cx="512" cy="101" r="43" class="brush-ring"/>
+                <circle cx="512" cy="101" r="4" class="brush-dot"/>
+              </svg>
+              <span class="viewport-label">Perspective</span>
+              <span class="viewport-scale">2048 � 2048 studs</span>
+            </div>
+            <div class="property-panel">
+              <strong>Raise / Lower</strong>
+              <label>Radius <span>64</span></label><div class="range"><i style="width:62%"></i></div>
+              <label>Strength <span>0.42</span></label><div class="range"><i style="width:42%"></i></div>
+              <label>Falloff <span>Smooth</span></label><div class="falloff">?</div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="product product-worldforger reveal">
+        <div class="product-index">02</div>
+        <div class="product-copy">
+          <div class="product-meta">
+            <span class="status"><i></i> In development</span>
+            <span>Roblox Studio plugin</span>
+          </div>
+          <h3>Worldforger</h3>
+          <p>The Studio-side companion that validates, imports and maintains complete world packages while protecting unrelated work already created in Roblox.</p>
+          <ul class="feature-list" aria-label="Worldforger highlights">
+            <li>Versioned world-package import</li>
+            <li>Terrain, materials and scene components</li>
+            <li>Scale and compatibility validation</li>
+            <li>Stable object ownership</li>
+            <li>Safe, selective reimport</li>
+          </ul>
+        </div>
+        <div class="product-visual forge-visual" aria-hidden="true">
+          <div class="forge-orbit orbit-one"></div>
+          <div class="forge-orbit orbit-two"></div>
+          <div class="forge-core">
+            <svg viewBox="0 0 100 100"><path d="M13 71 49 12l38 59-20 17H33Z"/><path d="m34 72 16-28 17 28-9 8H42Z"/></svg>
+          </div>
+          <div class="package package-a"><i></i><span>Terrain</span></div>
+          <div class="package package-b"><i></i><span>Materials</span></div>
+          <div class="package package-c"><i></i><span>Objects</span></div>
+          <div class="package package-d"><i></i><span>Splines</span></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="workflow" id="workflow" aria-labelledby="workflow-title">
+      <div class="section-shell">
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-kicker">The complete workflow</p>
+            <h2 id="workflow-title">Create here. Continue there.</h2>
+          </div>
+          <p>The handoff carries more than a picture. Terrain, materials and supported world components travel together with explicit scale and ownership.</p>
+        </div>
+
+        <div class="workflow-track reveal">
+          <div class="workflow-step">
+            <span>01</span><h3>Shape</h3><p>Sculpt or import a heightmap and refine the terrain directly in 3D.</p>
+          </div>
+          <div class="workflow-line"><i></i></div>
+          <div class="workflow-step">
+            <span>02</span><h3>Compose</h3><p>Add materials, editable splines and supported world components.</p>
+          </div>
+          <div class="workflow-line"><i></i></div>
+          <div class="workflow-step">
+            <span>03</span><h3>Validate</h3><p>Preview Roblox resolution, dimensions and transfer limitations.</p>
+          </div>
+          <div class="workflow-line"><i></i></div>
+          <div class="workflow-step">
+            <span>04</span><h3>Forge</h3><p>Bring the package into Studio and iterate without losing unrelated work.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="principles section-shell" id="principles" aria-labelledby="principles-title">
+      <div class="principles-lead reveal">
+        <p class="section-kicker">How we build</p>
+        <h2 id="principles-title">Focused tools should feel obvious in your hands.</h2>
+      </div>
+      <div class="principle-grid">
+        <article class="reveal"><span>Immediate</span><h3>Stay in the flow</h3><p>Fast feedback and predictable tools keep attention on the world rather than the software.</p></article>
+        <article class="reveal"><span>Editable</span><h3>Keep decisions reversible</h3><p>Advanced operations remain inspectable and adjustable until you deliberately bake them.</p></article>
+        <article class="reveal"><span>Explicit</span><h3>See the real constraints</h3><p>Scale, resolution and unsupported features are visible before they become export problems.</p></article>
+        <article class="reveal"><span>Useful</span><h3>Start with a complete path</h3><p>Core workflows should solve a real problem from creation through export without artificial friction.</p></article>
+      </div>
+    </section>
+
+    <section class="closing section-shell reveal">
+      <div class="closing-mark" aria-hidden="true">A</div>
+      <div>
+        <p class="section-kicker">Work in progress</p>
+        <h2>We are building the tools we want to use.</h2>
+        <p>Astraeus Terrain Studio and Worldforger are currently in active development. Follow the work as the first complete terrain workflow takes shape.</p>
+        <a class="button button-primary" href="https://github.com/erik4412" rel="noreferrer">Follow development</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <a class="brand footer-brand" href="#top">
+      <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 36 24 7l16 29h-8.4L24 21.8 16.4 36Z"/><path class="brand-cut" d="m19 36 5-9 5 9Z"/></svg>
+      <span>Astraeus <strong>Works</strong></span>
+    </a>
+    <p>Independent tools for world builders.</p>
+    <p>� <span data-year>2026</span> Astraeus Works</p>
+  </footer>
+</body>
+</html>
+
